@@ -1,0 +1,12 @@
+[submodule "MindWaveCore"]
+	path = MindWaveCore
+	url = https://github.com/Keksov/MindWaveCore.git
+[submodule "BodyMonitorCore"]
+	path = BodyMonitorCore
+	url = https://github.com/Keksov/BodyMonitorCore.git
+[submodule "GnauralCore"]
+	path = GnauralCore
+	url = https://github.com/Keksov/GnauralCore.git
+[submodule "SharedPasCore"]
+	path = SharedPasCore
+	url = https://github.com/Keksov/SharedPasCore.git
