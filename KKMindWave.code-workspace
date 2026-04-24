@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "path": "MindWaveCore" },
+    { "path": "BodyMonitorCore" },
+    { "path": "GnauralCore" },
+    { "path": "SharedPasCore" }
+  ],
+  "settings": {}
+}
