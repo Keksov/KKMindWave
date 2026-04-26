@@ -4,6 +4,7 @@
     { "path": "BodyMonitorCore" },
     { "path": "GnauralCore" },
     { "path": "SharedPasCore" }
+    { "path": "VendorsCore" }
   ],
   "settings": {}
 }
