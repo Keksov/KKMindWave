@@ -10,3 +10,6 @@
 [submodule "SharedPasCore"]
 	path = SharedPasCore
 	url = https://github.com/Keksov/SharedPasCore.git
+[submodule "VendorsCore"]
+	path = VendorsCore
+	url = https://github.com/Keksov/VendorsCore.git
