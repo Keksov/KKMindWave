@@ -11,7 +11,7 @@ set "EXIT_CODE=0"
 set "FPC_MODE=release"
 set "FPC_MODE_USED=release"
 set "SKIP_BUILD=0"
-set "SUBMODULE_STATUS=not run"
+set "WORKSPACE_STATUS=not run"
 set "FPC_STATUS=not run"
 set "MINDWAVE_RUNTIME_STATUS=not run"
 set "BODYMONITOR_NEUROSKY_STATUS=not run"
@@ -42,21 +42,14 @@ if errorlevel 1 (
 	goto :done
 )
 
-echo [bootstrap] Syncing submodules...
-git submodule sync --recursive
+echo [bootstrap] Ensuring workspace repositories...
+call ".\clone-workspace.bat"
 if errorlevel 1 (
-	set "SUBMODULE_STATUS=failed"
+	set "WORKSPACE_STATUS=failed"
 	set "EXIT_CODE=3"
 	goto :done
 )
-
-git submodule update --init --recursive
-if errorlevel 1 (
-	set "SUBMODULE_STATUS=failed"
-	set "EXIT_CODE=3"
-	goto :done
-)
-set "SUBMODULE_STATUS=success"
+set "WORKSPACE_STATUS=success"
 
 call :run_fpc
 if errorlevel 1 (
@@ -225,7 +218,7 @@ exit /b 0
 :print_summary
 echo.
 echo [bootstrap] Summary
-echo [bootstrap] Submodules: %SUBMODULE_STATUS%
+echo [bootstrap] Workspace repos: %WORKSPACE_STATUS%
 echo [bootstrap] FPC: %FPC_STATUS% [%FPC_MODE_USED%]
 echo [bootstrap] MindWave runtime: %MINDWAVE_RUNTIME_STATUS%
 echo [bootstrap] BodyMonitor NeuroSky source: %BODYMONITOR_NEUROSKY_STATUS%

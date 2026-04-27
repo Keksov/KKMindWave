@@ -1,0 +1,6 @@
+# name	remote-url	default-branch
+MindWaveCore	https://github.com/Keksov/MindWaveCore.git	main
+BodyMonitorCore	https://github.com/Keksov/BodyMonitorCore.git	main
+GnauralCore	https://github.com/Keksov/GnauralCore.git	main
+SharedPasCore	https://github.com/Keksov/SharedPasCore.git	main
+VendorsCore	https://github.com/Keksov/VendorsCore.git	main

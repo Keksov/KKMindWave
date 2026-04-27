@@ -3,7 +3,7 @@
     { "path": "MindWaveCore" },
     { "path": "BodyMonitorCore" },
     { "path": "GnauralCore" },
-    { "path": "SharedPasCore" }
+    { "path": "SharedPasCore" },
     { "path": "VendorsCore" }
   ],
   "settings": {}
